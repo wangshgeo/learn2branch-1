@@ -314,13 +314,22 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     print(f"seed {args.seed}")
-
-    train_size = 100000
-    valid_size = 20000
-    test_size = 20000
+                          
+    #train_size = 100000
+    #valid_size = 20000
+    #test_size = 20000
+    #exploration_strategy = 'pscost'
+    #node_record_prob = 0.05
+    #time_limit = 3600
+                          
+    train_size = 20000
+    valid_size = 4000
+    test_size = 4000
     exploration_strategy = 'pscost'
     node_record_prob = 0.05
     time_limit = 3600
+                          
+                          
 
     if args.problem == 'setcover':
         instances_train = glob.glob('data/instances/setcover/train_500r_1000c_0.05d/*.lp')
