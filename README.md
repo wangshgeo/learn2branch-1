@@ -1,4 +1,4 @@
-##测试内容：  
+##测试内容：(should contain the data introduction, date, data size, number of records)  
 复现文章Capacitated Facility Location部分  
 1.已完成  python 01_generate_instances.py facilities  
 2.已完成 python 02_generate_datasets.py facilities -j 4  # number of available CPUs（训练样本修改为2w）  
